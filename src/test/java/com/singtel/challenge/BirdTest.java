@@ -56,4 +56,10 @@ public class BirdTest {
         assertThat(outContent.toString(),  containsString("Cluck, cluck"));
     }
 
+    @Test
+    public void testRoosterSound() {
+        new Rooster().makeSound();
+        assertThat(outContent.toString(), containsString("Cock-a-doodle-doo"));
+    }
+
 }

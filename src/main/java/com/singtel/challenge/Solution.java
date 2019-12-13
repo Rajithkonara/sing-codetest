@@ -7,5 +7,7 @@ public class Solution {
         bird.walk();
         bird.fly();
         bird.sing();
+        Chicken c = new Chicken();
+        c.fly();
     }
 }
