@@ -1,8 +1,5 @@
 package com.singtel.challenge;
 
-public class Animal {
+public abstract class Animal {
 
-        void walk(){
-            System.out.println("I am walking");
-        }
 }

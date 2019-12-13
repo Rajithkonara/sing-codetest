@@ -1,13 +1,16 @@
 package com.singtel.challenge;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements SingBehaviour, WalkBehaviour, FlyBehaviour{
 
-    void fly() {
-        System.out.println("I am flying");
-    }
-
-    void sing() {
+    public void sing() {
         System.out.println("I am singing");
     }
 
+    public void walk() {
+        System.out.println("I am walking");
+    }
+
+    public void fly() {
+        System.out.println("I am flying");
+    }
 }
