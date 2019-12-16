@@ -1,5 +1,6 @@
 package com.singtel.challenge;
 
+import com.singtel.challenge.utils.AnimalSounds;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -60,6 +61,13 @@ public class BirdTest {
     public void testRoosterSound() {
         new Rooster().makeSound();
         assertThat(outContent.toString(), containsString("Cock-a-doodle-doo"));
+    }
+
+    @Test
+    public void testParrot() {
+        new Parrot().getParrotSound(AnimalSounds.CAT);
+        assertThat(outContent.toString(), containsString("Meow"));
+
     }
 
 }
