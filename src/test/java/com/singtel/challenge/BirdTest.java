@@ -70,4 +70,10 @@ public class BirdTest {
 
     }
 
+    @Test
+    public void testNativeLanguage() {
+        new Rooster().makeNativeSound("Sinhala");
+        assertThat(outContent.toString(), containsString("kukuku kuu"));
+    }
+
 }
