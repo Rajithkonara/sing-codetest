@@ -10,9 +10,9 @@ import java.io.PrintStream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FishTest {
+public class InsectTest {
 
     private static final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private static final PrintStream originalOut = System.out;
@@ -34,32 +34,18 @@ public class FishTest {
     }
 
     @Test
-    public void testFishSwim() {
-        new Fish().canSwim();
-        assertThat(outContent.toString(), containsString("I can swim"));
+    public void testButterfly() {
+        new Butterfly().fly();
+        assertThat(outContent.toString(), containsString("I can fly"));
     }
 
     @Test
-    public void testClownFish() {
-        ClownFish clownFish = new ClownFish();
-        assertEquals("Orange", clownFish.getColor());
-        assertEquals("Small", clownFish.getSize());
-        assertTrue(clownFish.isMakeJokes());
-    }
+    public void testMetamorphosis() {
+       Catterpillar catterpillar = new Catterpillar();
 
-    @Test
-    public void testShark() {
-        Shark shark = new Shark();
-        assertEquals("Grey", shark.getColor() );
-        assertEquals("Large", shark.getSize());
-        assertTrue(shark.isPredator());
-        assertFalse(shark.isMakeJokes());
-    }
+       new Metamorphosis().transform(catterpillar).fly();
+       String behavior = outContent.toString();
 
-    @Test
-    public void testDolphin() {
-        new Dolphin().canSwim();
-        assertThat(outContent.toString(), containsString("I can swim"));
+       assertEquals("I can fly\n", behavior);
     }
-
 }
