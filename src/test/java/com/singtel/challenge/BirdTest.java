@@ -1,5 +1,10 @@
 package com.singtel.challenge;
 
+import com.singtel.challenge.animal.Bird;
+import com.singtel.challenge.animal.bird.Duck;
+import com.singtel.challenge.animal.bird.Rooster;
+import com.singtel.challenge.animal.bird.Chicken;
+import com.singtel.challenge.animal.bird.Parrot;
 import com.singtel.challenge.utils.AnimalSounds;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

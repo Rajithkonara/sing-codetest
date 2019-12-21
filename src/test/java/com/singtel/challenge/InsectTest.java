@@ -1,5 +1,8 @@
 package com.singtel.challenge;
 
+import com.singtel.challenge.animal.behaviour.Metamorphosis;
+import com.singtel.challenge.animal.insect.Butterfly;
+import com.singtel.challenge.animal.insect.Catterpillar;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;

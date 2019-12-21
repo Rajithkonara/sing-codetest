@@ -1,4 +1,6 @@
-package com.singtel.challenge;
+package com.singtel.challenge.animal;
+
+import com.singtel.challenge.animal.behaviour.SwimBehaviour;
 
 public class Fish extends Animal implements SwimBehaviour {
 

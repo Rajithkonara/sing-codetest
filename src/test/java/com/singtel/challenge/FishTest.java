@@ -1,5 +1,9 @@
 package com.singtel.challenge;
 
+import com.singtel.challenge.animal.Fish;
+import com.singtel.challenge.animal.fish.ClownFish;
+import com.singtel.challenge.animal.fish.Dolphin;
+import com.singtel.challenge.animal.fish.Shark;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;

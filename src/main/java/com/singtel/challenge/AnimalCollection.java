@@ -1,5 +1,11 @@
 package com.singtel.challenge;
 
+import com.singtel.challenge.animal.Animal;
+import com.singtel.challenge.animal.behaviour.FlyBehaviour;
+import com.singtel.challenge.animal.behaviour.SingBehaviour;
+import com.singtel.challenge.animal.behaviour.SwimBehaviour;
+import com.singtel.challenge.animal.behaviour.WalkBehaviour;
+
 public class AnimalCollection {
 
     public static void count(Animal[] animals) {
