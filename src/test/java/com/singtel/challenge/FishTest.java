@@ -59,4 +59,10 @@ public class FishTest {
         assertFalse(shark.isMakeJokes());
     }
 
+    @Test
+    public void testDolphin() {
+        new Dolphin().canSwim();
+        assertThat(outContent.toString(), containsString("I can swim"));
+    }
+
 }
